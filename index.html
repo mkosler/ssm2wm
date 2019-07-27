@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Super Mario Maker 2 World Map Creator</title>
+</head>
+<body>
+    <noscript>
+        We're sorry, but Super Mario Maker 2 World Map Creator doesn't work without JavaScript enabled.
+    </noscript>
+    <form>
+        <fieldset>
+            <input type="number" id="width" placeholder="6">x<input type="number" id="height" placeholder="6">
+            <button id="createButton">New</button>
+            <button id="generate">Generate</button>
+        </fieldset>
+        <fieldset>
+            Mode:
+            <input type="radio" id="paint" name="mode" value="paint" checked>
+            <label for="paint">Paint</label>
+            <input type="radio" id="level" name="mode" value="level">
+            <label for="level">Level Assignment</label>
+        </fieldset>
+        <fieldset>
+            Layer:
+            <input type="radio" id="layer1" name="layer" value="1" checked>
+            <label for="layer1">1</label>
+            <input type="radio" id="layer2" name="layer" value="2">
+            <label for="layer2">2</label>
+            <input type="radio" id="layer3" name="layer" value="3">
+            <label for="layer3">3</label>
+        </fieldset>
+    </form>
+    <div>
+        <div id="editor"></div>
+        <div id="tilesheet"></div>
+        <div id="map"></div>
+        <canvas id="canvas" width="1280" height="720"></canvas>
+    </div>
+    <div class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <input type="text" id="levelId" placeholder="XXX-XXX-XXX">
+            <button id="assign">Assign</button>
+        </div>
+    </div>
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.js" integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI=" crossorigin="anonymous"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/svg.js/2.7.1/svg.min.js" integrity="sha256-DSAVgUuz6YXM7pUOvn+Lc40Ek6cWvBgCBU1jsx72Dqg=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/canvg/1.4/rgbcolor.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvg/dist/browser/canvg.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
