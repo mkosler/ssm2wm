@@ -77,7 +77,7 @@ const createEditor = (width, height) => {
                             levelId = this.data('levelId')
                         }
 
-                        $('.modal').addClass('show-modal')
+                        document.querySelector('.modal').classList.add('show-modal')
                     }
                 })
         }
