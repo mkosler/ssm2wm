@@ -167,7 +167,9 @@ document.querySelector('#generate').addEventListener('click', (e) => {
     }).font({
         family: 'sans-serif',
         size: 14
-    }).move(barrier.x() + padding * 2, barrier.y() + padding)
+    })
+    
+    levelText.move(barrier.x() + padding * 2, barrier.y() + padding)
 
     let importGroup = draw.group()
 
