@@ -119,7 +119,7 @@ document.querySelector('#levelId').addEventListener('change', (e) => {
 })
 
 document.querySelector('.close-button').addEventListener('click', (e) => {
-    e.srcElement.classList.remove('show-modal')
+    document.querySelector('.modal').classList.remove('show-modal')
 })
 
 document.querySelector('#assign').addEventListener('click', (e) => {
@@ -133,7 +133,7 @@ document.querySelector('#assign').addEventListener('click', (e) => {
 
     levelId = ''
 
-    e.srcElement.classList.remove('show-modal')
+    document.querySelector('.modal').classList.remove('show-modal')
 })
 
 document.querySelector('#generate').addEventListener('click', (e) => {
